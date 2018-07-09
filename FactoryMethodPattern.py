@@ -39,6 +39,6 @@ class PizzaFactory:
         else:
             return DeluxePizza()
 
-
-pizzaPrice = PizzaFactory.createPizza(Pizza.SEAFOOD_PIZZA_TYPE).getPrice()
-print(pizzaPrice)
+if __name__ == '__main__':
+    pizzaPrice = PizzaFactory.createPizza(Pizza.SEAFOOD_PIZZA_TYPE).getPrice()
+    print(pizzaPrice)
